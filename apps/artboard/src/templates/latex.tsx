@@ -15,28 +15,28 @@ const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
 
   return (
-    <div className="text-center space-y-2">
-      <div className="text-3xl font-bold">{basics.name}</div>
+    <div className="text-center mb-6">
+      <div className="text-3xl font-bold mb-2">{basics.name}</div>
       
-      <div className="flex flex-wrap items-center justify-center gap-x-4 text-sm">
+      <div className="text-sm">
         {basics.email && (
           <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
             {basics.email}
           </a>
         )}
-        {basics.email && basics.url.href && <span className="text-gray-400">|</span>}
+        {basics.email && basics.url.href && <span className="mx-2">|</span>}
         {basics.url.href && (
           <a href={basics.url.href} target="_blank" rel="noreferrer">
             {basics.url.label || basics.url.href}
           </a>
         )}
-        {(basics.email || basics.url.href) && basics.phone && <span className="text-gray-400">|</span>}
+        {(basics.email || basics.url.href) && basics.phone && <span className="mx-2">|</span>}
         {basics.phone && (
           <a href={`tel:${basics.phone}`} target="_blank" rel="noreferrer">
             {basics.phone}
           </a>
         )}
-        {(basics.email || basics.url.href || basics.phone) && basics.location && <span className="text-gray-400">|</span>}
+        {(basics.email || basics.url.href || basics.phone) && basics.location && <span className="mx-2">|</span>}
         {basics.location && <span>{basics.location}</span>}
       </div>
     </div>
@@ -49,8 +49,9 @@ const Summary = () => {
   if (!section.visible || isEmptyString(section.content)) return null;
 
   return (
-    <section id={section.id} className="mb-4">
-      <h2 className="text-lg font-bold border-b border-black pb-1 mb-2">{section.name}</h2>
+    <section id={section.id} className="mb-6">
+      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
+      <hr className="border-black mb-3" />
       <div
         dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
         className="wysiwyg text-sm leading-relaxed"
@@ -65,25 +66,27 @@ const Experience = () => {
   if (!section.visible || section.items.length === 0) return null;
 
   return (
-    <section id={section.id} className="mb-4">
-      <h2 className="text-lg font-bold border-b border-black pb-1 mb-2">{section.name}</h2>
+    <section id={section.id} className="mb-6">
+      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
+      <hr className="border-black mb-3" />
       
-      <div className="space-y-3">
+      <div className="space-y-4">
         {section.items.map((item) => (
-          <div key={item.id} className="space-y-1">
+          <div key={item.id} className="space-y-2">
             <div className="flex justify-between items-start">
               <div className="flex-1">
-                <div className="font-bold text-sm">{item.position}</div>
-                <div className="text-sm">{item.company}</div>
-                <div className="text-xs text-gray-600">{item.location}</div>
+                <div className="font-bold text-sm">{item.company}, {item.position}</div>
+                {item.location && (
+                  <div className="text-sm">{item.location}</div>
+                )}
               </div>
-              <div className="text-xs text-gray-600 text-right">{item.date}</div>
+              <div className="text-sm text-right">{item.date}</div>
             </div>
             
             {item.summary && (
               <div
                 dangerouslySetInnerHTML={{ __html: sanitize(item.summary) }}
-                className="wysiwyg text-xs leading-relaxed ml-0"
+                className="wysiwyg text-sm leading-relaxed ml-4"
               />
             )}
           </div>
@@ -99,8 +102,9 @@ const Education = () => {
   if (!section.visible || section.items.length === 0) return null;
 
   return (
-    <section id={section.id} className="mb-4">
-      <h2 className="text-lg font-bold border-b border-black pb-1 mb-2">{section.name}</h2>
+    <section id={section.id} className="mb-6">
+      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
+      <hr className="border-black mb-3" />
       
       <div className="space-y-2">
         {section.items.map((item) => (
@@ -109,7 +113,7 @@ const Education = () => {
               <div className="font-bold text-sm">{item.institution}</div>
               <div className="text-sm">{item.studyType} in {item.area}</div>
             </div>
-            <div className="text-xs text-gray-600">{item.date}</div>
+            <div className="text-sm text-right">{item.date}</div>
           </div>
         ))}
       </div>
@@ -123,15 +127,16 @@ const Skills = () => {
   if (!section.visible || section.items.length === 0) return null;
 
   return (
-    <section id={section.id} className="mb-4">
-      <h2 className="text-lg font-bold border-b border-black pb-1 mb-2">{section.name}</h2>
+    <section id={section.id} className="mb-6">
+      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
+      <hr className="border-black mb-3" />
       
       <div className="space-y-2">
         {section.items.map((item) => (
           <div key={item.id} className="space-y-1">
             <div className="font-bold text-sm">{item.name}</div>
             {item.keywords && item.keywords.length > 0 && (
-              <div className="text-xs text-gray-600">
+              <div className="text-sm">
                 {item.keywords.join(", ")}
               </div>
             )}
@@ -475,17 +480,17 @@ export const Latex = ({ columns }: TemplateProps) => {
   const [main, sidebar] = columns;
 
   return (
-    <div className="p-6 space-y-4" style={{ fontFamily: "Charter, serif" }}>
+    <div className="p-8" style={{ fontFamily: "Charter, serif" }}>
       <Header />
       
-      <div className="space-y-4">
+      <div className="space-y-0">
         {main.map((section) => (
           <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
         ))}
       </div>
       
       {sidebar && sidebar.length > 0 && (
-        <div className="space-y-4">
+        <div className="space-y-0">
           {sidebar.map((section) => (
             <Fragment key={section}>{mapSectionToComponent(section)}</Fragment>
           ))}
