@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert SVG to JPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+        #svg-container {
+            display: inline-block;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>LaTeX Template Thumbnail</h1>
+    <div id="svg-container"></div>
+    <canvas id="canvas" width="1132" height="1600"></canvas>
+    
+    <script>
+        // Load the SVG
+        fetch('latex-thumbnail.svg')
+            .then(response => response.text())
+            .then(svgText => {
+                document.getElementById('svg-container').innerHTML = svgText;
+                
+                // Convert to canvas
+                const svg = document.querySelector('svg');
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Create image from SVG
+                const svgData = new XMLSerializer().serializeToString(svg);
+                const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+                const svgUrl = URL.createObjectURL(svgBlob);
+                
+                const img = new Image();
+                img.onload = function() {
+                    ctx.drawImage(img, 0, 0);
+                    
+                    // Convert to JPG data URL
+                    const jpgDataUrl = canvas.toDataURL('image/jpeg', 0.9);
+                    
+                    // Create download link
+                    const link = document.createElement('a');
+                    link.download = 'latex.jpg';
+                    link.href = jpgDataUrl;
+                    link.textContent = 'Download JPG Thumbnail';
+                    document.body.appendChild(link);
+                };
+                img.src = svgUrl;
+            });
+    </script>
+</body>
+</html>

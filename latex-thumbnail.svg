@@ -1,0 +1,99 @@
+<svg width="1132" height="1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1132" height="1600" fill="white"/>
+  
+  <!-- Header -->
+  <text x="566" y="80" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="black">JOHN DOE</text>
+  
+  <!-- Contact Info -->
+  <text x="566" y="120" text-anchor="middle" font-family="serif" font-size="14" fill="black">john.doe@gmail.com | (555) 123-4567</text>
+  <text x="566" y="140" text-anchor="middle" font-family="serif" font-size="14" fill="black">Pleasantville, CA 94588</text>
+  
+  <!-- Professional Summary Section -->
+  <text x="80" y="200" font-family="serif" font-size="18" font-weight="bold" fill="black">PROFESSIONAL SUMMARY</text>
+  <line x1="80" y1="210" x2="1052" y2="210" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="240" font-family="serif" font-size="12" fill="black">Innovative Web Developer with 5 years of experience in building</text>
+  <text x="80" y="260" font-family="serif" font-size="12" fill="black">impactful and user-friendly websites and applications.</text>
+  <text x="80" y="280" font-family="serif" font-size="12" fill="black">Specializes in front-end technologies and passionate about</text>
+  <text x="80" y="300" font-family="serif" font-size="12" fill="black">modern web standards and cutting-edge development techniques.</text>
+  
+  <!-- Professional Experience Section -->
+  <text x="80" y="360" font-family="serif" font-size="18" font-weight="bold" fill="black">PROFESSIONAL EXPERIENCE</text>
+  <line x1="80" y1="370" x2="1052" y2="370" stroke="black" stroke-width="1"/>
+  
+  <!-- Experience Item 1 -->
+  <text x="80" y="400" font-family="serif" font-size="14" font-weight="bold" fill="black">Senior Web Developer</text>
+  <text x="80" y="420" font-family="serif" font-size="12" fill="black">Creative Solutions Inc.</text>
+  <text x="80" y="440" font-family="serif" font-size="12" fill="black">San Francisco, CA</text>
+  <text x="900" y="400" font-family="serif" font-size="12" fill="black">January 2019 to Present</text>
+  
+  <text x="100" y="470" font-family="serif" font-size="11" fill="black">• Spearheaded the redesign of the main product website,</text>
+  <text x="100" y="485" font-family="serif" font-size="11" fill="black">  resulting in a 40% increase in user engagement.</text>
+  <text x="100" y="505" font-family="serif" font-size="11" fill="black">• Developed and implemented a new responsive framework,</text>
+  <text x="100" y="520" font-family="serif" font-size="11" fill="black">  improving cross-device compatibility.</text>
+  
+  <!-- Experience Item 2 -->
+  <text x="80" y="560" font-family="serif" font-size="14" font-weight="bold" fill="black">Web Developer</text>
+  <text x="80" y="580" font-family="serif" font-size="12" fill="black">TechAdvancers</text>
+  <text x="80" y="600" font-family="serif" font-size="12" fill="black">San Jose, CA</text>
+  <text x="900" y="560" font-family="serif" font-size="12" fill="black">June 2016 to December 2018</text>
+  
+  <text x="100" y="630" font-family="serif" font-size="11" fill="black">• Collaborated in a team of 10 to develop high-quality</text>
+  <text x="100" y="645" font-family="serif" font-size="11" fill="black">  web applications using React.js and Node.js.</text>
+  <text x="100" y="665" font-family="serif" font-size="11" fill="black">• Optimized application performance, achieving a 30%</text>
+  <text x="100" y="680" font-family="serif" font-size="11" fill="black">  reduction in load times.</text>
+  
+  <!-- Education Section -->
+  <text x="80" y="740" font-family="serif" font-size="18" font-weight="bold" fill="black">EDUCATION</text>
+  <line x1="80" y1="750" x2="1052" y2="750" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="780" font-family="serif" font-size="14" font-weight="bold" fill="black">University of California</text>
+  <text x="80" y="800" font-family="serif" font-size="12" fill="black">Bachelor's in Computer Science</text>
+  <text x="80" y="820" font-family="serif" font-size="12" fill="black">Berkeley, CA</text>
+  <text x="900" y="780" font-family="serif" font-size="12" fill="black">August 2012 to May 2016</text>
+  
+  <!-- Skills Section -->
+  <text x="80" y="880" font-family="serif" font-size="18" font-weight="bold" fill="black">SKILLS</text>
+  <line x1="80" y1="890" x2="1052" y2="890" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="920" font-family="serif" font-size="14" font-weight="bold" fill="black">Web Technologies</text>
+  <text x="80" y="940" font-family="serif" font-size="12" fill="black">HTML5, JavaScript, PHP, Python</text>
+  
+  <text x="80" y="970" font-family="serif" font-size="14" font-weight="bold" fill="black">Web Frameworks</text>
+  <text x="80" y="990" font-family="serif" font-size="12" fill="black">React.js, Angular, Vue.js, Laravel, Django</text>
+  
+  <!-- Projects Section -->
+  <text x="80" y="1050" font-family="serif" font-size="18" font-weight="bold" fill="black">PROJECTS</text>
+  <line x1="80" y1="1060" x2="1052" y2="1060" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="1090" font-family="serif" font-size="14" font-weight="bold" fill="black">E-Commerce Platform</text>
+  <text x="80" y="1110" font-family="serif" font-size="12" fill="black">Project Lead</text>
+  <text x="100" y="1130" font-family="serif" font-size="11" fill="black">Led the development of a full-stack e-commerce</text>
+  <text x="100" y="1145" font-family="serif" font-size="11" fill="black">platform, improving sales conversion by 25%.</text>
+  
+  <!-- Certifications Section -->
+  <text x="80" y="1200" font-family="serif" font-size="18" font-weight="bold" fill="black">CERTIFICATIONS</text>
+  <line x1="80" y1="1210" x2="1052" y2="1210" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="1240" font-family="serif" font-size="14" font-weight="bold" fill="black">Full-Stack Web Development</text>
+  <text x="80" y="1260" font-family="serif" font-size="12" fill="black">CodeAcademy</text>
+  <text x="900" y="1240" font-family="serif" font-size="12" fill="black">2020</text>
+  
+  <text x="80" y="1290" font-family="serif" font-size="14" font-weight="bold" fill="black">AWS Certified Developer</text>
+  <text x="80" y="1310" font-family="serif" font-size="12" fill="black">Amazon Web Services</text>
+  <text x="900" y="1290" font-family="serif" font-size="12" fill="black">2019</text>
+  
+  <!-- Profiles Section -->
+  <text x="80" y="1370" font-family="serif" font-size="18" font-weight="bold" fill="black">PROFILES</text>
+  <line x1="80" y1="1380" x2="1052" y2="1380" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="1410" font-family="serif" font-size="12" fill="black">LinkedIn: johndoe</text>
+  <text x="80" y="1430" font-family="serif" font-size="12" fill="black">GitHub: johndoe</text>
+  
+  <!-- References Section -->
+  <text x="80" y="1490" font-family="serif" font-size="18" font-weight="bold" fill="black">REFERENCES</text>
+  <line x1="80" y1="1500" x2="1052" y2="1500" stroke="black" stroke-width="1"/>
+  
+  <text x="80" y="1530" font-family="serif" font-size="12" fill="black">Available upon request</text>
+</svg>

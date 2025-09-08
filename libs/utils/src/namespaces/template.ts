@@ -6,6 +6,7 @@ export const templatesList = [
   "gengar",
   "glalie",
   "kakuna",
+  "latex",
   "leafish",
   "nosepass",
   "onyx",

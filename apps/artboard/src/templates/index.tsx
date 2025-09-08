@@ -7,6 +7,7 @@ import { Ditto } from "./ditto";
 import { Gengar } from "./gengar";
 import { Glalie } from "./glalie";
 import { Kakuna } from "./kakuna";
+import { Latex } from "./latex";
 import { Leafish } from "./leafish";
 import { Nosepass } from "./nosepass";
 import { Onyx } from "./onyx";
@@ -35,6 +36,9 @@ export const getTemplate = (template: Template) => {
     }
     case "kakuna": {
       return Kakuna;
+    }
+    case "latex": {
+      return Latex;
     }
     case "leafish": {
       return Leafish;

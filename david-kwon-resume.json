@@ -1,0 +1,280 @@
+{
+  "basics": {
+    "name": "David Kwon",
+    "headline": "Lead Software Engineer",
+    "email": "david.kwon.lee@outlook.com",
+    "phone": "213-800-1124",
+    "location": "Torrance, CA",
+    "url": {
+      "label": "davidkwon.dev",
+      "href": "https://davidkwon.dev"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Professional Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>Lead Software Engineer driving <strong>serverless microservices</strong>, <strong>GraphQL</strong> APIs, and <strong>React</strong> apps at enterprise scale. Led Taco Bell's pricing/menu platforms across 8,000+ stores (90% efficiency, 35% cost savings). Taco Bell Innovation Challenge 2023 winner.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": []
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "clx1234567890123456789012",
+          "visible": true,
+          "institution": "University of California, Irvine",
+          "studyType": "Bachelor of Science",
+          "area": "Computer Science",
+          "score": "",
+          "date": "2017",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Professional Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "clx2345678901234567890123",
+          "visible": true,
+          "company": "Hadrian Automation",
+          "position": "Full Stack Software Engineer",
+          "location": "Torrance, CA",
+          "date": "06/2025 – Present",
+          "summary": "<ul><li>Built production services in <strong>Go</strong> and lightweight web dashboards in <strong>TypeScript</strong> to improve task visibility and scheduling on the factory floor.</li><li>Delivered demand planning and task gating features (<strong>Go/gRPC</strong> backend services with a <strong>React, Next, TypeScript</strong> Frontend integrated with existing manufacturing systems; supported rollout and on-call.</li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "clx3456789012345678901234",
+          "visible": true,
+          "company": "Yum! Brands — Taco Bell",
+          "position": "Senior Software Engineer",
+          "location": "Irvine, CA",
+          "date": "06/2022 – 06/2025",
+          "summary": "<ul><li>Led Next Generation POS Menu Delivery System, modernizing architecture with AWS (<strong>Lambda</strong>, <strong>S3</strong>, <strong>SQS</strong>) and .NET/<strong>C#</strong>, increasing order throughput by 40% and fostering Yum! Brands partnership.</li><li>Architected serverless pricing and rewards platform using <strong>GraphQL</strong>, <strong>AWS AppSync</strong>, <strong>DynamoDB</strong>, and <strong>TypeScript</strong>, enabling real-time CRUD operations for 100K+ product prices across 8,000+ locations.</li><li>Improved back-of-house inventory processing by 87% with a <strong>Go</strong>-based performance engine on AWS <strong>Lambda</strong>, replacing legacy <strong>Node.js</strong> with concurrency-safe implementations.</li><li>Designed kitchen display management APIs using <strong>GraphQL</strong>, <strong>AWS CDK</strong>, and <strong>DynamoDB</strong>, enabling real-time updates with Cognito-based role access, reducing display latency by 30%.</li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "clx4567890123456789012345",
+          "visible": true,
+          "company": "Yum! Brands — Taco Bell",
+          "position": "Software Engineer II",
+          "location": "Irvine, CA",
+          "date": "06/2020 – 06/2022",
+          "summary": "<ul><li>Developed PIE.AI, an award-winning AI-powered service desk system using <strong>Python</strong>, AWS serverless, and NLP pipelines, automating 10K+ monthly support calls.</li><li>Built serverless ETL pipeline with <strong>AWS Step Functions</strong> and <strong>Lambda</strong>, reducing pricing sync time by 90% compared to legacy SQL Server batch processing for 8,000+ locations.</li><li>Created <strong>GraphQL</strong>-based pricing API for 8,000+ restaurants, achieving 99.9% uptime and sub-second query latency.</li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "clx5678901234567890123456",
+          "visible": true,
+          "company": "Yum! Brands — Taco Bell",
+          "position": "Software Engineer I",
+          "location": "Irvine, CA",
+          "date": "06/2019 – 06/2020",
+          "summary": "<ul><li>Developed <strong>Python</strong>-based ETL workflows to consolidate data inputs from multiple sources for cross-team analytics and reporting.</li><li>Contributed to responsive web app with Next.js and React for enterprise menu pricing, enabling real-time edits on AWS serverless stack using <strong>TypeScript</strong>.</li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "clx6789012345678901234567",
+          "visible": true,
+          "company": "UCI Division of Continuing Education",
+          "position": "Software Engineer",
+          "location": "Irvine, CA",
+          "date": "06/2017 – 06/2019",
+          "summary": "<ul><li>Contributed to scalable Learning Management System for 50K+ students using AWS ECS and S3, React, and <strong>TypeScript</strong>, improving access speed by 60%.</li><li>Developed educational websites with AWS CloudFront CDN delivery using <strong>TypeScript</strong>, reducing bounce rates by 47%.</li></ul>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteer",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": []
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "clx7890123456789012345678",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "davidkwonlee",
+          "icon": "linkedin",
+          "url": {
+            "label": "linkedin.com/in/davidkwonlee",
+            "href": "https://linkedin.com/in/davidkwonlee"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": []
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "latex",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 18,
+      "format": "letter",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#000000"
+    },
+    "typography": {
+      "font": {
+        "family": "Charter",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
