@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  app:
+    volumes:
+      - ./apps/artboard/src/templates:/app/apps/artboard/src/templates
+    environment:
+      - NODE_ENV=development
