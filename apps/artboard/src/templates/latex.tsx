@@ -5,7 +5,7 @@ import type {
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { isEmptyString, sanitize } from "@reactive-resume/utils";
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 
 import { BrandIcon } from "../components/brand-icon";
 import { useArtboardStore } from "../store/artboard";
@@ -19,10 +19,10 @@ const Header = () => {
   const linkedinProfile = profiles.items.find(item => item.network.toLowerCase() === 'linkedin');
 
   return (
-    <div className="text-center mb-6">
-      <div className="text-3xl font-bold mb-2">{basics.name}</div>
+    <div className="text-center mb-8">
+      <div className="text-4xl font-bold mb-3">{basics.name}</div>
       
-      <div className="text-sm">
+      <div className="text-xs">
         {basics.email && (
           <a href={`mailto:${basics.email}`} target="_blank" rel="noreferrer">
             {basics.email}
@@ -58,8 +58,8 @@ const Summary = () => {
 
   return (
     <section id={section.id} className="mb-6">
-      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
-      <hr className="border-black mb-3" />
+      <h2 className="text-base font-bold mb-1">{section.name}</h2>
+      <hr className="border-gray-400 border-t mb-3" />
       <div
         dangerouslySetInnerHTML={{ __html: sanitize(section.content) }}
         className="wysiwyg text-sm leading-relaxed"
@@ -75,8 +75,8 @@ const Experience = () => {
 
   return (
     <section id={section.id} className="mb-6">
-      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
-      <hr className="border-black mb-3" />
+      <h2 className="text-base font-bold mb-1">{section.name}</h2>
+      <hr className="border-gray-400 border-t mb-3" />
       
       <div className="space-y-4">
         {section.items.map((item) => (
@@ -85,16 +85,16 @@ const Experience = () => {
               <div className="flex-1">
                 <div className="font-bold text-sm">{item.company}, {item.position}</div>
                 {item.location && (
-                  <div className="text-sm">{item.location}</div>
+                  <div className="text-xs text-gray-600">{item.location}</div>
                 )}
               </div>
-              <div className="text-sm text-right">{item.date}</div>
+              <div className="text-xs text-right">{item.date}</div>
             </div>
             
             {item.summary && (
               <div
                 dangerouslySetInnerHTML={{ __html: sanitize(item.summary) }}
-                className="wysiwyg text-sm leading-relaxed ml-4"
+                className="wysiwyg text-xs leading-relaxed ml-4"
               />
             )}
           </div>
@@ -111,17 +111,17 @@ const Education = () => {
 
   return (
     <section id={section.id} className="mb-6">
-      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
-      <hr className="border-black mb-3" />
+      <h2 className="text-base font-bold mb-1">{section.name}</h2>
+      <hr className="border-gray-400 border-t mb-3" />
       
       <div className="space-y-2">
         {section.items.map((item) => (
           <div key={item.id} className="flex justify-between items-start">
             <div className="flex-1">
               <div className="font-bold text-sm">{item.institution}</div>
-              <div className="text-sm">{item.studyType} in {item.area}</div>
+              <div className="text-xs">{item.studyType} in {item.area}</div>
             </div>
-            <div className="text-sm text-right">{item.date}</div>
+            <div className="text-xs text-right">{item.date}</div>
           </div>
         ))}
       </div>
@@ -136,15 +136,15 @@ const Skills = () => {
 
   return (
     <section id={section.id} className="mb-6">
-      <h2 className="text-lg font-bold mb-1">{section.name}</h2>
-      <hr className="border-black mb-3" />
+      <h2 className="text-base font-bold mb-1">{section.name}</h2>
+      <hr className="border-gray-400 border-t mb-3" />
       
       <div className="space-y-2">
         {section.items.map((item) => (
           <div key={item.id} className="space-y-1">
             <div className="font-bold text-sm">{item.name}</div>
             {item.keywords && item.keywords.length > 0 && (
-              <div className="text-sm">
+              <div className="text-xs">
                 {item.keywords.join(", ")}
               </div>
             )}
