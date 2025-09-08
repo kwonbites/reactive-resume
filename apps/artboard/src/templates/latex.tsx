@@ -1,11 +1,11 @@
 import type {
-    CustomSection,
-    CustomSectionGroup,
-    URL
+  CustomSection,
+  CustomSectionGroup,
+  URL
 } from "@reactive-resume/schema";
 import { Education, Experience, Volunteer } from "@reactive-resume/schema";
 import { isEmptyString, sanitize } from "@reactive-resume/utils";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import { BrandIcon } from "../components/brand-icon";
 import { useArtboardStore } from "../store/artboard";
