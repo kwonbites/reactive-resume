@@ -13,6 +13,10 @@ import type { TemplateProps } from "../types/template";
 
 const Header = () => {
   const basics = useArtboardStore((state) => state.resume.basics);
+  const profiles = useArtboardStore((state) => state.resume.sections.profiles);
+  
+  // Find LinkedIn profile
+  const linkedinProfile = profiles.items.find(item => item.network.toLowerCase() === 'linkedin');
 
   return (
     <div className="text-center mb-6">
@@ -36,8 +40,12 @@ const Header = () => {
             {basics.phone}
           </a>
         )}
-        {(basics.email || basics.url.href || basics.phone) && basics.location && <span className="mx-2">|</span>}
-        {basics.location && <span>{basics.location}</span>}
+        {(basics.email || basics.url.href || basics.phone) && linkedinProfile && <span className="mx-2">|</span>}
+        {linkedinProfile && (
+          <a href={linkedinProfile.url.href} target="_blank" rel="noreferrer">
+            {linkedinProfile.url.label || linkedinProfile.url.href}
+          </a>
+        )}
       </div>
     </div>
   );
